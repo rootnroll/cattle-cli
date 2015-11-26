@@ -1,7 +1,5 @@
 from setuptools import setup
 
-with open('./requirements.txt') as r:
-    requirements = [line for line in r]
 
 setup(
     name='cattle',
@@ -12,7 +10,7 @@ setup(
     author='Darren Shepherd',
     author_email='darren.s.shepherd@gmail.com',
     description='Python API and CLI for Cattle',
-    install_requires=requirements,
+    install_requires=['gdapi-python==0.5.2'],
     entry_points={
         'console_scripts': [
             'cattle = cattle:_main'

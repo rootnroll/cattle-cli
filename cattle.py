@@ -28,7 +28,7 @@ class Client(gdapi.Client):
             obj = self.reload(obj)
             if time.time() - start > timeout:
                 msg = 'Timeout waiting for [{0}] to be done'.format(obj)
-                raise Exception(msg)
+                raise TimeoutError(msg)
 
         return obj
 

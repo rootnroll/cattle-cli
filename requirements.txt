@@ -1,1 +1,1 @@
-https://github.com/rootnroll/gdapi-python/archive/master.zip#egg=gdapi-python==0.5.2
+gdapi-python==0.5.2
